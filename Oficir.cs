@@ -25,6 +25,14 @@ namespace Projekat
         {
             get; set;
         }
+        public string NazivOdlikovanja
+        {
+            get;set;
+        }
+        public string NazivCina
+        {
+            get;set;
+        }
         public string Kontakt
         {
             get; set;
@@ -38,8 +46,11 @@ namespace Projekat
             this.Jmbg = (int)dr["JMBG"];
             this.Ime = (string)dr["Ime"];
             this.Prezime = (string)dr["Prezime"];
-            this.Mesto = (string)dr["Mesto rodjenja"];
+            this.Mesto = (string)dr["MestoRodjenja"];
+            this.NazivOdlikovanja = (string)dr["NazivOdlikovanja"];
+            this.NazivCina = (string)dr["NazivCina"];
             this.Kontakt = (string)dr["Kontakt"];
+
         }
         public static List<Oficir> UcitajSveOficire()
         {
