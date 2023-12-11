@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,9 +12,20 @@ namespace Projekat
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<string> ls = new List<string>();
-            SqlCommand cmd = Konekcija.GetCommand();
-            cmd.CommandText = "usp_SelectImePrezime";
+            List<Oficir> lista = Oficir.UcitajSveOficire();
+            foreach(Oficir o in lista)
+            {
+                DropDownList1.Items.Add(new ListItem(o.Ime + " " + o.Prezime));
+            }
+            foreach (Oficir o in lista)
+            {
+                DropDownList2.Items.Add(new ListItem(o.NazivOdlikovanja));
+            }
+            foreach (Oficir o in lista)
+            {
+                DropDownList3.Items.Add(new ListItem(o.NazivCina));
+            }
+
         }
     }
 }
