@@ -11,7 +11,9 @@ namespace Projekat
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            List<string> ls = new List<string>();
+            SqlCommand cmd = Konekcija.GetCommand();
+            cmd.CommandText = "usp_SelectImePrezime";
         }
     }
 }

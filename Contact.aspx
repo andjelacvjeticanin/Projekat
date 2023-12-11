@@ -1,17 +1,29 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Projekat.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
-
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+    <table style="width: 100%;">
+        <tr>
+            <td style="width: 322px">PROMENA ODLIKOVANJA I ČINA OFICIRA</td>
+        </tr>
+        <tr>
+            <td style="width: 322px">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 322px">Izaberi oficira:</td>
+            <td>
+                <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td style="width: 322px">Promeni odlikovanje:</td>
+            <td>
+                <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td style="width: 322px">Promeni čin:</td>
+            <td>
+                <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList></td>
+        </tr>
+    </table>
 </asp:Content>
