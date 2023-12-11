@@ -27,11 +27,11 @@ namespace Projekat
         }
         public string NazivOdlikovanja
         {
-            get; set;
+            get;set;
         }
         public string NazivCina
         {
-            get; set;
+            get;set;
         }
         public string Kontakt
         {
@@ -63,9 +63,9 @@ namespace Projekat
             {
                 cmd.Connection.Open();
                 da.Fill(dtable);
-                if (dtable.Rows.Count > 0)
+                if(dtable.Rows.Count > 0)
                 {
-                    foreach (DataRow dr in dtable.Rows)
+                    foreach(DataRow dr in dtable.Rows)
                     {
                         oficiri.Add(new Oficir(dr));
                     }
@@ -78,7 +78,7 @@ namespace Projekat
 
 
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 return null;
@@ -86,9 +86,10 @@ namespace Projekat
             finally
             {
                 cmd.Connection.Close();
-
+                
             }
 
         }
+       
     }
 }
