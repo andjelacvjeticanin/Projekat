@@ -33,7 +33,9 @@
         </tr>
         <tr>
             <td>
-                &nbsp;</td>
+                <asp:GridView ID="GridView1" runat="server">
+                </asp:GridView>
+            </td>
         </tr>
         <tr>
             <td>

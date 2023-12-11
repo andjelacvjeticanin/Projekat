@@ -28,6 +28,8 @@ namespace Projekat
                 DropDownList3.Items.Add(new ListItem(o.NazivCina));
                 
             }
+            GridView1.DataSource = Oficir.UcitajSveOficire();
+            GridView1.DataBind();
 
         }
 
@@ -65,6 +67,8 @@ namespace Projekat
             {
                 cmd.Connection.Close();
             }
+            GridView1.DataSource = Oficir.UcitajSveOficire();
+            GridView1.DataBind();
         }
     }
 }
