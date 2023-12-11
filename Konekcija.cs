@@ -14,6 +14,7 @@ namespace Projekat
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = new SqlConnection(conString);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
             return cmd;
 
         }
