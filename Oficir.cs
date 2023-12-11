@@ -58,14 +58,14 @@ namespace Projekat
             SqlCommand cmd = Konekcija.GetCommand();
             cmd.CommandText = "usp_SviOficiri";
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
+            DataTable dtable = new DataTable();
             try
             {
                 cmd.Connection.Open();
-                da.Fill(dt);
-                if(dt.Rows.Count > 0)
+                da.Fill(dtable);
+                if(dtable.Rows.Count > 0)
                 {
-                    foreach(DataRow dr in dt.Rows)
+                    foreach(DataRow dr in dtable.Rows)
                     {
                         oficiri.Add(new Oficir(dr));
                     }
