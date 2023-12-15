@@ -12,14 +12,17 @@ namespace Projekat
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Oficir> lista = Oficir.UcitajSveOficire();
-            foreach(Oficir o in lista)
+            if (!Page.IsPostBack)
             {
-                DropDownList1.Items.Add(new ListItem(o.NazivOdlikovanja));
-            }
-            foreach (Oficir o in lista)
-            {
-                DropDownList2.Items.Add(new ListItem(o.NazivCina));
+                List<Oficir> lista = Oficir.UcitajSveOficire();
+                foreach (Oficir o in lista)
+                {
+                    DropDownList1.Items.Add(new ListItem(o.NazivOdlikovanja));
+                }
+                foreach (Oficir o in lista)
+                {
+                    DropDownList2.Items.Add(new ListItem(o.NazivCina));
+                }
             }
 
         }

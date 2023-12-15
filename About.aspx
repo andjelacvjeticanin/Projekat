@@ -1,19 +1,17 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Projekat.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="jumbotron">
     <p>
         <br />
         <table style="width:100%;">
             <tr>
-                <td class="text-right" style="width: 314px"></td>
-                <td class="text-center" style="width: 433px; font-size: x-large">&nbsp;</td>
+                <td class="text-right" style="width: 314px">&nbsp;</td>
+                <td class="text-left" style="width: 433px; font-size: x-large">
+                    <strong><span style="font-size: x-large">OFICIR</span></strong></td>
                 <td></td>
             </tr>
             <tr>
-                <td class="text-right" style="width: 314px; height: 25px;"><br />
-                </td>
-                <td style="width: 433px; height: 25px;">&nbsp;&nbsp;&nbsp;
-                    <strong><span style="font-size: x-large">OFICIR</span></strong></td>
                 <td style="height: 25px"></td>
             </tr>
             <tr>
@@ -33,12 +31,12 @@
                 <td></td>
             </tr>
             <tr>
-                <td class="text-right" style="width: 314px">Mesto Rodjena<br />
+                <td class="text-right" style="width: 314px; height: 30px;">Mesto Rodjena<br />
                 </td>
-                <td style="width: 433px">&nbsp;&nbsp;&nbsp;
+                <td style="width: 433px; height: 30px;">&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                 </td>
-                <td></td>
+                <td style="height: 30px"></td>
             </tr>
             <tr>
                 <td class="text-right" style="height: 32px">Kontakt</td>
@@ -49,14 +47,14 @@
             </tr>
             <tr>
                 <td class="text-right">Naziv Cina&nbsp;</td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                <td>&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox11" runat="server" style="margin-left: 0"></asp:TextBox>
                 </td>
                 <td></td>
             </tr>
             <tr>
                 <td class="text-right">Naziv Odlikovanja&nbsp;</td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;
+                <td>&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
                 </td>
                 <td></td>
@@ -73,4 +71,5 @@
     <br />
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
     </asp:Content>
